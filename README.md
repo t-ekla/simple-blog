@@ -1,8 +1,8 @@
 # README
 
-[![Build Status](https://travis-ci.org/fetc90/simple-blog.svg?branch=master)](https://travis-ci.org/fetc90/simple-blog)
+[![Build Status](https://travis-ci.com/fetc90/simple-blog)](https://travis-ci.com/fetc90/simple-blog)
 
-[![Build Status](https://travis-ci.org/fetc90/simple-blog.svg?branch=master)](https://travis-ci.org/fetc90/simple-blog)
+[![Build Status](https://travis-ci.com/fetc90/simple-blog)](https://travis-ci.com/fetc90/simple-blog)
 
 [![Coverage Status](https://coveralls.io/repos/github/fetc90/simple-blog/badge.svg?branch=master)](https://coveralls.io/github/fetc90/simple-blog/?branch=master)
 
