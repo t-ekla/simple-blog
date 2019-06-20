@@ -1,6 +1,6 @@
 # README
 
-[![Build Status](https://travis-ci.com/fetc90/simple-blog)](https://travis-ci.com/fetc90/simple-blog)
+[![Build Status](https://travis-ci.com/fetc90/simple-blog.svg?branch=master)](https://travis-ci.com/fetc90/simple-blog)
 
 [![Build Status](https://travis-ci.com/fetc90/simple-blog)](https://travis-ci.com/fetc90/simple-blog)
 
