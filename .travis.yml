@@ -6,5 +6,18 @@ before_install:
  - gem update --system
  - gem install bundler
 
+ before_script:
+- bundle exec rake db:create
+- bundle exec rake db:migrate
+
 script:
  - bundle exec rspec
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: AWdFVZPo9rBdwxpLaQpUPIrlZoVEMY9IEKfWBZw3KWtX0Pr48H9OqMjYAfDFAgNq8Rbm0ESyPImof3hCctniZ2q13Kn+wJrygZ2AOMQ+6UzkB4A8sZbU/RmOc1st6O1bdOV3SZRpEA6jiGY280eRhBz6848+SNr+zxs+AMSy/REPD9Q2FrkOsaO/QK/LwcqmMxPSDm1GPcCQe8fNR88ZDJep1bvGBhfFsXT/l7kWT68AQvLjwPH+w7C0Sb4HNkRPhorkxX5MxXFPsafW9t7F0nZNQhAlRd9YAFLVMNCQfUXumL+X7RVcXDHmtVkyfPlXNWRT3uPg7J+QEX3Gw46yX8oNYIWDIsC8iJWfvpg/010yWLjWXbl7H4hq5NS65wI8UO9LRrQ/Iow87N9r0F9UXN75GmkNRzunyBienDb5O82spuQ/zE39l/6y/KFjx4ak9XQ50PmlbAWObG4XZ9aKMAPoaiaLHdn0M975rdtMQ3D2IvXnQLUKTK6UMFcSs2Jz/vn3dxXzH0GIKXbeWga46beJsb7C/FajFH789GIIf1rGePGV2PdHFubeb+AwphI4Mkujl5e7YgnqOyJEyhqIDF62ysSzkFaO1DE8/V4as82O6Yfu1oTKzjtUu9aG3+xirSCJxQ0fk3MaKsXfLYYg8TITX6N9CrHFZGqmJpeNfNI=
+  app: simple-blog
+  on:
+    repo: fetc90/simple-blog
+ 
