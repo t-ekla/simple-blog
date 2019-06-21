@@ -20,4 +20,7 @@ deploy:
   app: pure-headland-62263
   on:
     repo: fetc90/simple-blog
+  skip_cleanup: true
  
+after_script:
+ - bundle exec rake coveralls:push
